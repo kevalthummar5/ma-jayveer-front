@@ -1,0 +1,7 @@
+{
+   // ... other ESLint configuration ...
+   "rules": {
+      // ... other ESLint rules ...
+      "no-lone-blocks": "off" // Disable the no-lone-blocks rule
+   }
+}

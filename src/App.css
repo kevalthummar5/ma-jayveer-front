@@ -1,0 +1,267 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.App {
+   text-align: center;
+}
+
+.App-logo {
+   height: 40vmin;
+   pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+   .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+   }
+}
+
+.App-header {
+   background-color: #282c34;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: calc(10px + 2vmin);
+   color: white;
+}
+
+.App-link {
+   color: #61dafb;
+}
+.login-box {
+   /* border: 2px solid forestgreen; */
+   overflow: hidden;
+   min-width: 550px;
+   width: 30vw;
+   margin: 10vh auto;
+}
+.login-with-kite-wrap {
+   border: 2px solid greenyellow;
+   padding: 20px 10px;
+   display: flex;
+   width: 50vw;
+   margin: 10px auto;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+.my-kite-btn {
+}
+
+/* CSS */
+
+/* CSS */
+
+/* CSS */
+.my-kite-btn {
+   align-items: center;
+   appearance: none;
+   background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+   border: 0;
+   border-radius: 6px;
+   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+   box-sizing: border-box;
+   color: #fff;
+   cursor: pointer;
+   display: inline-flex;
+   font-family: "JetBrains Mono", monospace;
+   height: 30px;
+   justify-content: center;
+   line-height: 1;
+   list-style: none;
+   overflow: hidden;
+   padding-left: 12px;
+   padding-right: 12px;
+   position: relative;
+   text-align: left;
+   text-decoration: none;
+   transition: box-shadow 0.15s, transform 0.15s;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   white-space: nowrap;
+   will-change: box-shadow, transform;
+   font-size: 16px;
+}
+.user-info-container li {
+   padding: 5px 15px 0px 5px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 18px;
+   /* identical to box height */
+   margin: 5px 0;
+   text-align: right;
+
+   /* Text/90 */
+
+   color: #1b222b;
+   display: flex;
+   justify-content: space-between;
+}
+.my-kite-btn:focus {
+   box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+.view-user-card {
+   min-height: 70vh !important;
+}
+.my-kite-btn:hover {
+   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+   transform: translateY(-2px);
+}
+
+.my-kite-btn:active {
+   box-shadow: #3c4fe0 0 3px 7px inset;
+   transform: translateY(2px);
+}
+.login-input {
+   /* border: 2px solid blueviolet; */
+   margin: 20px auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   width: 100%;
+
+   flex-direction: row;
+}
+.login-input input {
+   padding: 10px 8px;
+   font-size: 1.2rem;
+   border-radius: 15px;
+   width: 80%;
+}
+.login-input i {
+   scale: 1.5;
+}
+.login-btn-grp {
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   margin: 10px auto;
+   align-items: center;
+   justify-content: center;
+}
+.login-btn-grp button {
+   padding: 8px 10px;
+   margin: 4px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.my-main-nav {
+   display: flex;
+   width: 99.9vw !important;
+   border: 2px solid khaki;
+   height: fit-content;
+   /* margin: auto; */
+   /* padding: 5px 10px; */
+   /* padding-top: 0.5em; */
+   /* padding-bottom: 0.5em; */
+   margin-bottom: 10px;
+   border: 1px solid #a2a2a2;
+   background-color: #f4f4f4;
+   -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+.my-main-nav a {
+   text-decoration: none;
+   /* margin: auto; */
+   min-height: 40px;
+   /* border: 2px solid forestgreen; */
+   padding: 10px 16px;
+   height: 100%;
+}
+
+.my-form-wrap {
+   /* border: 2px solid green; */
+
+   width: 50vw;
+   margin: auto;
+}
+.my-user-form-stockarea {
+   width: 100%;
+   /* border: 2px solid tan; */
+   overflow: auto;
+}
+.my-main-nav .active {
+   /* border: 2px solid firebrick; */
+   background-color: gray;
+   color: white;
+}
+.my-stockwise-quantity {
+   width: 100%;
+   border: 1px solid gold;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   flex-direction: row;
+   justify-content: space-between;
+}
+td,
+th {
+   padding: 5px 10px;
+}
+.main-table {
+   height: 80vh !important;
+   overflow: auto;
+   /* border: 2px solid black !important; */
+}
+.my-tab-plane {
+   height: 70vh !important;
+   overflow: auto;
+}
+@keyframes App-logo-spin {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .my-form-wrap {
+      width: 80vw;
+   }
+   .my-stockwise-quantity {
+      flex-direction: column;
+      align-items: start !important;
+      justify-content: center;
+      gap: 10px !important;
+   }
+   .login-box {
+      /* border: 2px solid forestgreen; */
+      /* min-width: 550px; */
+
+      width: 550vw;
+      margin: 10vh auto;
+   }
+   .login-with-kite-wrap {
+      width: 80vw;
+   }
+}
+
+::-webkit-scrollbar {
+   width: 0.5em;
+   height: 1rem;
+}
+::-webkit-scrollbar-track {
+   background: rgb(240, 239, 239);
+   border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: rgba(165, 161, 161, 0.479);
+   border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #0057ff;
+}
