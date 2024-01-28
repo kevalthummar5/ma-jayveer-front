@@ -64,7 +64,7 @@ const SignUp = () => {
                </NavLink>
             </div>
             <div className="text-primary d-flex flex-column align-items-center ">
-               <h1>Sign Up to DHAN HIKE </h1>
+               <h1>Sign Up to Algo trade </h1>
                <form onSubmit={submitHandler} className="d-flex w-75 flex-column ">
                   <div className="mb-4 w-100 login-input">
                      <i>

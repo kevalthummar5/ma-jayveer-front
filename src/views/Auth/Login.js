@@ -68,7 +68,7 @@ const Login = (props) => {
             </div>
 
             <div className="text-primary d-flex flex-column align-items-center  h-50">
-               <h1>Welcome to DHAN HIKE </h1>
+               <h1>Welcome to Algo trade </h1>
                <form onSubmit={submitHandler} className="d-flex  flex-column ">
                   <div className="mb-4  login-input">
                      <i>
