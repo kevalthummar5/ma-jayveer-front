@@ -25,6 +25,7 @@ const AddStock = () => {
          expiry: ""
       },
       isActiveFromAdmin: true,
+      isBothSideAllowed: false,
       isAutoTargetHit: true,
       marginPoint: 0,
       targetPoint: 0,
@@ -233,6 +234,18 @@ const AddStock = () => {
                         </Col>
                      </Row>
                      <Row>
+                        <Col className="ms-3 mt-4 mb-2 d-flex gap-5 align-items-center">
+                           <p className="h4 me-2 ">Both Side Allowed (BUY/SELL)</p>
+                           <div className=" form-switch form-check-success">
+                              <Input
+                                 type="switch"
+                                 id=""
+                                 onChange={(e) => setdata({ ...data, isBothSideAllowed: e.target.checked })}
+                                 name="success"
+                                 checked={data.isBothSideAllowed}
+                              />
+                           </div>
+                        </Col>
                         <Col className="ms-3 mt-4 mb-2 d-flex gap-5 align-items-center">
                            <p className="h4 me-2 ">Active</p>
                            <div className=" form-switch form-check-success">

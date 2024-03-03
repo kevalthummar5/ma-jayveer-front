@@ -394,7 +394,7 @@ export const getStockOption = async () => {
 
    try {
       const j = await newInstance.get(`orders/get-instruments`)
-      // console.log(j)
+      console.log(j)
       // toast.success(j?.data?.message)
       const expiryOption = j?.data?.map((e) => {
          return {
